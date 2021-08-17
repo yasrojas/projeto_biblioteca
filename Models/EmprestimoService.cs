@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,11 +31,53 @@ namespace Biblioteca.Models
             }
         }
 
-        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro)
+        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro = null)
         {
             using(BibliotecaContext bc = new BibliotecaContext())
             {
-                return bc.Emprestimos.Include(e => e.Livro).ToList();
+                IQueryable<Emprestimo> query;
+                
+                if(filtro != null)
+                {
+                    //definindo dinamicamente a filtragem
+                    switch(filtro.TipoFiltro)
+                    {
+                        case "Usuario":
+                            query = bc.Emprestimos.Where(e => e.NomeUsuario.Contains(filtro.Filtro));
+                        break;
+
+                        case "Livro":
+                            List<Livro> LivrosFiltrados = bc.Livros.Where(l => l.Titulo.Contains(filtro.Filtro)).ToList();
+
+                            List<int>LivrosIds = new List<int>();
+                            for(int i = 0; i <LivrosFiltrados.Count; i++)
+                            {
+                                LivrosIds.Add(LivrosFiltrados[i].Id);
+                            }
+
+                            query = bc.Emprestimos.Where(e => LivrosIds.Contains(e.LivroId));
+                        break;
+
+                        default:
+                            query = bc.Emprestimos;
+                        break;
+                    }
+                }
+                else
+                {
+                    // caso filtro não tenha sido informado
+                    query = bc.Emprestimos;
+                }
+                
+                //ordenação padrão
+                List<Emprestimo> ListaEmprestimo =  query.OrderBy(e => e.DataDevolucao).ToList();
+
+                foreach (Emprestimo emprestimo in ListaEmprestimo)
+                {
+                    emprestimo.Livro = bc.Livros.Find(emprestimo.LivroId);
+                }
+
+                return ListaEmprestimo;
             }
         }
 
