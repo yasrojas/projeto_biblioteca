@@ -14402,16 +14402,6 @@
   "RootNamespace": "Biblioteca",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\ExcluirUsuario.cshtml",
-      "TargetPath": "Views\\Usuarios\\ExcluirUsuario.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\NeedAdmin.cshtml",
-      "TargetPath": "Views\\Usuarios\\NeedAdmin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -14437,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Livro\\_FormCadastro.cshtml",
       "TargetPath": "Views\\Livro\\_FormCadastro.cshtml",
       "FileKind": "mvc"
@@ -14447,8 +14442,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\cadastroRealizado.cshtml",
-      "TargetPath": "Views\\Usuarios\\cadastroRealizado.cshtml",
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\cadastroRealizado.cshtml",
+      "TargetPath": "Views\\Usuario\\cadastroRealizado.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14462,13 +14457,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\RegistrarUsuarios.cshtml",
-      "TargetPath": "Views\\Usuarios\\RegistrarUsuarios.cshtml",
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\Listagem.cshtml",
+      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Emprestimo\\Edicao.cshtml",
       "TargetPath": "Views\\Emprestimo\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\Exclusao.cshtml",
+      "TargetPath": "Views\\Usuario\\Exclusao.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14487,8 +14492,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\editarUsuario.cshtml",
-      "TargetPath": "Views\\Usuarios\\editarUsuario.cshtml",
+      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuario\\NeedAdmin.cshtml",
+      "TargetPath": "Views\\Usuario\\NeedAdmin.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14499,11 +14504,6 @@
     {
       "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yasmin\\Desktop\\tecnico_em_informatica\\UC7\\Biblioteca - netcore3.1\\Biblioteca\\Views\\Usuarios\\ListaDeUsuarios.cshtml",
-      "TargetPath": "Views\\Usuarios\\ListaDeUsuarios.cshtml",
       "FileKind": "mvc"
     }
   ],
